@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: product-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/product_db
+    username: madhav
+    password: madhav
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+    open-in-view: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - metrics
+  endpoint:
+    health:
+      show-details: always
