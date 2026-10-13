@@ -1,0 +1,33 @@
+# Java
+*.class
+*.log
+
+# Maven
+target/
+.mvn/timing.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Mac
+.DS_Store
+
+# Environment
+.env
+.env.*
+
+# Docker
+docker-data/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# Secrets
+*.pem
+*.key
+secrets/
